@@ -11,7 +11,7 @@ Sockets Links.
 ## PROGRAM
 developed by T.Goshanrajan (212225040098)
 ## Client
-```
+```python
 import socket
 s=socket.socket()
 s.connect(('localhost',8001))
@@ -21,7 +21,7 @@ while True:
     print("Server > ",s.recv(1024).decode())
 ```
 ## Server
-```
+```python
 import socket
 s=socket.socket()
 s.bind(('localhost',8001))
